@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# sqlite3 database
+*.sqlite3
+
+# project notes
+project_notes/
