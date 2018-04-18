@@ -9,12 +9,11 @@ class Bookmark(models.Model):
     notes = models.TextField('Notes', blank=True)
     url = models.URLField('URL', unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
-	last_modified = models.DateTimeField(auto_now=True)
-	# ToDo - add isFavorite;
-	#favorite =
-	tags = models.ManyToManyField(Tag)
+    last_modified = models.DateTimeField(auto_now=True)
+    # Todo add tags and isfavorite
+    #tags = models.ManyToManyField(Tag)
 
 class Tag(models.Model):
 	'''Creates Tags for Bookmarks'''
 	id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    name = models.CharField(max_length=30)
+	name = models.CharField(max_length=30)
