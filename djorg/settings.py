@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 3rd party apps
-
+    'bootstrap4',
     # our apps
     'bookmarks.apps.BookmarksConfig'
 ]

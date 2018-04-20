@@ -1,4 +1,5 @@
-% load bootstrap4 %}
+
+{% load bootstrap4 %}
 
 <!DOCTYPE html>
 <head>
@@ -15,4 +16,11 @@
             <li><a href="/bookmarks/">Bookmarks</a></li>
         </ul>
         {% endblock %}
-</div>
+    </div>
+
+    <div id="content">
+        {% block content %}<h1>Welcome to Djorg!</h1>{% endblock %}
+    </div>
+</body>
+
+</html>
